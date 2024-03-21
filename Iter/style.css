@@ -1,4 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    }
+
+@font-face {
+    font-family:'minhafonte';
+    src:url("Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf");
+}
+
+header{
+    background-color: #990606;
+    text-align: center ;
+    color: white;
+    font-size: 50px;
+    font-family: minhafonte;
+}
+
+body{
+    background-color: blanchedalmond;
+    font-family: minhafonte;
+}
+
 p {
-    color:blue; 
+    color: black; 
     text-align: center;
+}
+
+.inform{
+    color: black; 
+    text-align: center;
+}
+
+.fund{
+    color: black; 
+    text-align: center;
+}
+
+.credit{
+    color: black;
+    text-align: end;
+}
+
+form{
+    color: black; 
+    text-align: center;
+    margin: auto;
+    text-align: center"
+}
+
+table{
+    text-align: center;
+}
+
+.image{
+    text-align:center;
+}
+
+.tabela{
+    text-align: center;
+}
+footer{
+    font-family: minhafonte;
+    text-align: right;
+    background-color: #990606;
+    color: white;
+    size: 13;
 }
