@@ -9,15 +9,16 @@
 }
 
 header{
-    background-color: #990606;
+    background-color: #005883;
     text-align: center ;
     color: white;
     font-size: 50px;
     font-family: minhafonte;
 }
 
+
 body{
-    background-color: blanchedalmond;
+    background-color: rgba(232, 227, 227, 0.844)
     font-family: minhafonte;
 }
 
@@ -49,6 +50,7 @@ form{
 }
 
 table{
+    border: 1px solid;
     text-align: center;
 }
 
@@ -62,7 +64,7 @@ table{
 footer{
     font-family: minhafonte;
     text-align: right;
-    background-color: #990606;
+    background-color: #005883;
     color: white;
-    size: 13;
+    size: 15;
 }
