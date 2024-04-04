@@ -3,23 +3,19 @@
     padding: 0;
     }
 
-@font-face {
-    font-family:'minhafonte';
-    src:url("Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf");
-}
-
 header{
     background-color: #005883;
     text-align: center ;
     color: white;
     font-size: 50px;
-    font-family: minhafonte;
+    font-family: "Times New Roman", Times, serif;
 }
 
 
 body{
-    background-color: rgba(232, 227, 227, 0.844)
-    font-family: minhafonte;
+    background-color: rgba(219, 212, 212, 0.932);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
 }
 
 p {
@@ -49,9 +45,13 @@ form{
     text-align: center"
 }
 
-table{
+table, th, td {
     border: 1px solid;
     text-align: center;
+    width: 50%;
+    margin-bottom : .15em;
+    table-layout: fixed;
+
 }
 
 .image{
@@ -61,9 +61,10 @@ table{
 .tabela{
     text-align: center;
 }
+
 footer{
-    font-family: minhafonte;
-    text-align: right;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
     background-color: #005883;
     color: white;
     size: 15;
