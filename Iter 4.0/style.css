@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    }
+/*
+header{
+    background-color: #005883;
+    text-align: center ;
+    color: white;
+    font-size: 50px;
+    font-family: Verdana;
+}
+
+NAV  DO GEMINI **/
+
+nav {
+    background-color: #005883;  
+    padding: 10px;  
+  }
+  
+  .nav-list {
+    display: flex;  
+    list-style: none;  
+    margin: 0;  
+    padding: 0;  
+  }
+  
+  .nav-list li {
+    margin-right: 20px; 
+    font-size: 20px;
+    color: white;
+  }
+  
+  .nav-list a {
+    text-decoration: none;
+    
+    color: white;  
+  }
+  
+  
+
+body{
+    background-color:rgb(223, 240, 255);
+    font-family: Verdana;
+    text-align: left;
+}
+
+p {
+    color: black; 
+    text-align: center;
+}
+
+.inform{
+    color: black; 
+    text-align: center;
+}
+
+.fund{
+    color: black; 
+    text-align: center;
+}
+
+.credit{
+    color: black;
+    text-align: end;
+}
+
+.box1{
+    background-color: #005883;
+    color:rgb(255, 255, 255);
+    font-family:Verdana;
+    position: absolute;
+    top:88%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    padding: 45px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: aliceblue;
+    text-align: center;
+}
+
+input {
+    padding: 15px;
+    border:none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 15px;
+}
+
+.org{
+    text-align: start ;
+}
+
+button {
+    background-color: aliceblue;
+    border: none;
+    padding: 8px;
+    width: 100%;
+    border-radius: 15px;
+    font-size: 15px;
+    cursor:pointer;
+    text-align: center;
+}
+
+button:hover {
+    background-color:rgb(223, 240, 255);
+}
+
+.image{
+    text-align:center;
+}
+
+footer{
+    font-family: Verdana;
+    text-align: center;
+    background-color: #005883;
+    color: white;
+    size: 15;
+}
