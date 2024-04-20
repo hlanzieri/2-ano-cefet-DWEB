@@ -7,6 +7,7 @@ h1 {
     height: 70px;
     text-align: center;
     color: #64ef8e;
+    font-size: 35px;
 }
 
 header {
@@ -91,7 +92,7 @@ button {
 }
 
 button:hover {
-    background-color:rgb(223, 240, 255);
+    background-color: whitesmoke;
 }
 
 p{
@@ -100,11 +101,14 @@ p{
 }
 
 footer {
-    font-family: Verdana;
+    font-family: Verdana; 
     text-align: center;
     background-color: #035f83;
     color: #64ef8e;
-    position: fixed;
-    bottom: 0;
+    padding: 12px; 
+    font-size: 15px; 
     width: 100%;
+    position: fixed; 
+    bottom: 0;
+    line-height: 13px;
 }
