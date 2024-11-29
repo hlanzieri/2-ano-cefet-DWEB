@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <a href="javascript: new Date().toLocaleTimeString();">
+            Que horas são?
+        </a>
+        <a href="javascript: alert(new Date.toLocaleTimeString());">
+            Verifique sem modificar o HTML
+        </a>
+
+        <script>
+            function factorial(n) { 
+            if (n <= 1) return n;
+            else return n*factorial (n-1);
+            }
+            document.write("<table>"); 
+            document.write("<tr><th>n</th><th>n!</th></tr>");
+            for(var i = 1; i <= 10; i++) {
+            document.write("<tr><td>" + i + "</td><td>" + factorial(i) + "</td></tr>");
+            }
+            document.write("</table>"); 
+            document.write("Gerado em " + new Date());
+
+            function concatenaNome(){
+            var nome = document.getElementById("nome").value;
+            var sobrenome = document.getElementById("sobrenome").value;
+            if(nome == ""){
+            alert("Você deve inserir o nome.");
+            return;
+            }
+            if (sobrenome == ""){
+            alert("Você deve inserir o sobrenome.");
+            return;
+            }
+            var genero = document.querySelector('input[name = "optradio"]:checked');
+            var resultado;
+            var artigo;
+            switch (genero.value) {
+            case "feminino":
+            resultado ="mulher";
+            artigo = "uma";
+            break;
+            case "masculino":
+            resultado = "homem";
+            artigo = "um";
+            break;
+            default:
+            resultado = "nada";
+            artigo = "nada";
+            }
+            document.getElementById('resultado').innerHTML = "Você é " + artigo + " "+ resultado + ". O nome completo é: " + nome +" "+ sobrenome;
+            }
+            function clearInput(){
+            let nome = document.getElementById("nome");
+            let sobrenome = document.getElementById("sobrenome");
+            nome.value = "";
+            sobrenome.value =
+            document.getElementById('resultado').innerHTML = "";
+            }
+        </script>
+        <p></p>
+        <p>
+            <label for="nome">Nome</label>
+            <input id="nome" type="text" name="nome">
+            </p>
+            <p>
+            <label for="sobrenome">Sobrenome</label>
+            <input id="sobrenome" type="text" name="sobrenome">
+            </p>
+            <div class="genero">
+                <form>
+                <label class="radio-inline">
+                <label for="feminino">Gênero Biológico:</label>
+                <input type="radio" name="optradio" id="feminino" value="feminino" checked>Feminino
+                </label>
+                <label class="radio-inline">
+                <input type="radio" name="optradio" id="masculino" value="masculino">Masculino
+                </label>
+                </form>
+                </div>
+                <br>
+                <input type="button" onclick="concatenaNome()" value="Enviar" id="botao" /></p>
+            <p><strong id="resultado"></strong></p>
+
+        </p>
+        
+    </body>
+</html>
