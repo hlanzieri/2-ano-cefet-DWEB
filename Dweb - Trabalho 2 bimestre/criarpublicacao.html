@@ -6,6 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adicionar Publicação</title>
     <link rel="stylesheet" href="criarpublicacao.css">
+    <script>
+        function validar(){
+            var comentario = document.getElementById("comentario").value;
+            var imagem = document.getElementById("imagem").value;
+            if(comentario == ""){
+                alert("Insira informações sobre o seu blog");
+            }
+            if(imagem == ""){
+                alert("Insira um arquivo de imagem");
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -20,10 +32,10 @@
             <label for="imagem">Selecionar Imagem:</label>
             <input type="file" id="imagem" name="imagem" accept="image/*">
 
-            <label for="comentario">Adicionar Comentário:</label>
-            <textarea id="comentario" name="comentario" placeholder="Escreva um comentário..."></textarea>
+            <label for="comentario">Adicionar informações:</label>
+            <textarea id="comentario" name="comentario" placeholder="Escreva seu blog..."></textarea>
 
-            <button type="submit">Publicar</button>
+            <button type="submit" onclick="validar()">Publicar</button>            
         </form>
     </div>
 
