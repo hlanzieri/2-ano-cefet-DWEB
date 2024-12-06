@@ -5,6 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ITER - Sua próxima viagem começa aqui</title>
     <link rel="stylesheet" href="pag_inicial.css">
+
+    <script>
+        function validar(){
+            var pais = document.getElementById("destination").value;
+            var estado = document.getElementById("estado").value;
+            var cidade = document.getElementById("cidade").value;
+
+            if(pais == "" || estado == "" || cidade == ""){
+                alert("Preencha todos os campos");
+            }
+
+            if(pais != "" && estado != "" && cidade != ""){
+                alert("Busca realizada com sucesso");
+            }
+        }
+    </script>
+
 </head>
 <body>
     <nav>
@@ -38,7 +55,7 @@
                 <input type="text" id="cidade" name="cidade" placeholder="Digite a cidade">
                 
                 <form action="pontos_turisticos.html">
-                <button type="submit">Buscar</button>
+                <button type="submit" onclick="validar()">Buscar</button>
             </form>
             </form>
         </div>

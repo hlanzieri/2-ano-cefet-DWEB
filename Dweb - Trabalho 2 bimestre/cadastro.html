@@ -6,6 +6,27 @@
 	<link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="cadastro.css">
     <title>Criar conta</title>
+    <script>
+        function validar(){
+            var nome = document.getElementById("nome").value;
+            var tel = document.getElementById("tel").value;
+            var email = document.getElementById("email").value;
+            var senha = document.getElementById("senha").value;
+
+            if(nome == "" || tel == "" || email == "" || senha == ""){
+                alert("Preencha todos os campos!");
+            }
+
+            if(senha.length < 8){
+                alert("A senha deve conter no mínimo 8 caracteres");
+            }
+            else{
+                if(nome != "" && tel != "" && email != "" && senha != ""){
+                alert("Cadastro realizado");
+            }
+            }
+        }
+    </script>
 </head>
 <body>
     <header> <p><a href="pag_inicial.html"><strong>ITER</strong></a></p></header>
@@ -15,7 +36,7 @@
         <input id="tel" type="text" placeholder="Telefone" /> <br><br>
         <input id="email" type="email" placeholder="Email" /> <br><br>
         <input id="senha" type="password" placeholder="Senha" /> <br><br><br>
-        <button type="submit">Concluir</button>
+        <button type="submit" onclick="validar()">Concluir</button>
         <br><br>
         <p>Já possui uma conta? <a href="login.html">Entrar</a></p>
     </div>
